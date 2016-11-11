@@ -63,7 +63,7 @@ public class CLockView extends LinearLayout {
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void refreshTime() {
         Calendar calendar = Calendar.getInstance();
-        tvTime.setText(String.format("%d:%d:%d", calendar.get(Calendar.HOUR_OF_DAY)+1, calendar.get(Calendar.MINUTE), calendar.get(Calendar.SECOND)));
+        tvTime.setText(String.format("%02d:%02d:%02d", calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), calendar.get(Calendar.SECOND)));
     }
 
     @Override
